@@ -1,0 +1,39 @@
+{
+  "name": "crypto-subtle-shield",
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/esm/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "bun x tsc",
+    "build:watch": "bun x tsc --watch",
+    "test": "node  --test --experimental-test-coverage",
+    "build:cjs": "bun x tsc -p tsconfig.cjs.json && mv dist/cjs/index.js dist/cjs/index.cjs",
+    "build:esm": "bun x tsc -p tsconfig.json && mv dist/esm/index.js dist/esm/index.mjs",
+    "build:npm": "bun run build:cjs && bun run build:esm"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "tslib": "^2.6.2"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.mjs"
+    }
+  },
+  "description": "CryptoSubtleShield is a Node.js library for easy encryption and decryption using various algorithms. It provides a convenient interface to Node.js's built-in crypto module and offers additional features for enhanced control and security.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextyfine-dev/crypto-subtle-shield.git"
+  },
+  "author": "nextyfine-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nextyfine-dev/crypto-subtle-shield/issues"
+  },
+  "homepage": "https://github.com/nextyfine-dev/crypto-subtle-shield#readme"
+}
