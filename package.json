@@ -35,5 +35,28 @@
   "bugs": {
     "url": "https://github.com/nextyfine-dev/crypto-subtle-shield/issues"
   },
-  "homepage": "https://github.com/nextyfine-dev/crypto-subtle-shield#readme"
+  "homepage": "https://github.com/nextyfine-dev/crypto-subtle-shield#readme",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "encryption",
+    "decryption",
+    "encrypt",
+    "decrypt",
+    "crypto",
+    "encryption decryption",
+    "aes encryption",
+    "aes decryption",
+    "file encryption",
+    "file decryption",
+    "text encryption",
+    "text decryption",
+    "cipher",
+    "nodejs",
+    "node encrypt decrypt",
+    "crypto-subtle-shield",
+    "crypto subtle shield",
+    "CryptoSubtleShield"
+  ]
 }
