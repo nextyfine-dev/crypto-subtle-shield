@@ -60,7 +60,7 @@ bun add crypto-subtle-shield
 
 ```javascript
 // CommonJS
-const CryptoSubtleShield = require("crypto-subtle-shield").default;
+const CryptoSubtleShield = require("crypto-subtle-shield");
 const cryptoShield = new CryptoSubtleShield();
 
 // ESM
